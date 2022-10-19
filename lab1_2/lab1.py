@@ -15,9 +15,9 @@ arr = np.insert(arr, 0, list(' '+key_ver), axis=1)
 
 print('--------------------------------------------------------')
 print('Шифрування...')
-arr_encrypt, text_encrypted = encode_decode(arr, key_hor, key_ver, True)
+arr_encrypt, encrypted_text = encode_decode(arr, key_hor, key_ver, True)
 print('Матриця (зашифрована):\n', arr_encrypt)
-print('Зашифрований текст:', text_encrypted)
+print('Зашифрований текст:', encrypted_text)
 
 
 print('--------------------------------------------------------')
