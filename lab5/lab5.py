@@ -1,4 +1,3 @@
-from lab4.utils import *
 from utils import *
 
 
@@ -7,7 +6,6 @@ p = generate_prime_value(range_end)
 q = generate_prime_value(range_end)
 while q == p:
     q = generate_prime_value(range_end)
-
 n = p * q
 pfi = (p - 1) * (q - 1) # phi(n)
 is_valid= False
@@ -19,7 +17,6 @@ while is_valid != True:
 d = inverse_element(e, pfi)
 public_key = (n,e)
 private_ker = (n,d)
-
 
 m = input("Введіть число в межах від 1 до {}: ".format(n - 2))
 try:
