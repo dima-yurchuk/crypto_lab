@@ -1,5 +1,5 @@
 def mul02(byte):
-    byte_in_des = int(byte, base=16)
+    byte_in_des = byte
     inpyt_byte_in_bin =  str(bin(byte_in_des))[2:]
     byte_shifted_in_des = byte_in_des << 1
     byte_shifted_in_bin = str(bin(byte_shifted_in_des))[2:]
@@ -19,7 +19,7 @@ def mul02(byte):
 def mul03(byte):
     mul02_res = mul02(byte)
     mul02_res_in_des = int(mul02_res, base=16)
-    byte_in_des = int(byte, base=16)
+    byte_in_des = byte
     result = hex(mul02_res_in_des ^ byte_in_des)
     result_str = str(result)[2:]
     if len(result_str) < 2:
@@ -27,8 +27,8 @@ def mul03(byte):
     return result_str
 
 
-byte1 = 'd4'
-byte2 = 'bf'
+byte1 = 0xd4
+byte2 = 0xbf
 print('Множення байту на елемент (байт) 02 та 03:')
 print(f'mul02(d4): {mul02(byte1)}')
 print(f'mul03(bf): {mul03(byte2)}')
