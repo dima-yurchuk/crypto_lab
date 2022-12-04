@@ -33,7 +33,7 @@ try:
         if m < p and m >= 0:
             flag = True
     (a, b) = encrypt(m, p, g, y)
-    print(f'Pашифроване число: ({a} {b})')
+    print(f'Зашифроване число: ({a} {b})')
     value = decrypt(a, b, x, p)
     print(f'Розшифроване число: {value}')
 
