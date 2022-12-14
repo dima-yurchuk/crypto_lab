@@ -1,4 +1,5 @@
 from lab5.utils import is_prime
+from lab9.utils import *
 import random
 
 def generate_prime_value(range_start, range_end):
